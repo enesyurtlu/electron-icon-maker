@@ -3,7 +3,8 @@
   "version": "0.0.3",
   "description": "An icon generator to generate all the icon files needed for electron packaging",
   "bin": {
-    "electron-icon-maker": "index.js"
+    "electron-iconmaker-mib": "index.js",
+    "eim": "index.js"
   },
   "main": "index.js",
   "scripts": {
