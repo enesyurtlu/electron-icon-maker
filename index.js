@@ -42,9 +42,9 @@ function createPNGs(position) {
             createPNGs(position + 1);
         } else {
             // done, generate the icons
-            icongen(PNGoutputDir, oSub + 'mac/', {type: 'png', names: {icns:'icon'}, modes:['icns'], report: true} )
+            icongen(PNGoutputDir, oSub , {type: 'png', names: {icns:'icon'}, modes:['icns'], report: true} )
                 .then( ( results ) => {
-                icongen(PNGoutputDir, oSub + 'win/', {type: 'png',names: {ico:'icon'}, modes:['ico'], report: true} )
+                icongen(PNGoutputDir, oSub , {type: 'png',names: {ico:'icon'}, modes:['ico'], report: true} )
         .then( ( results ) => {
                 // console.log('\n ALL DONE');
             // rename the PNGs to electron format
